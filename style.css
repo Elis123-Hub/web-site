@@ -1,0 +1,358 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; 
+}
+
+
+header {
+    background-color: #800020; 
+    color: white;
+    padding: 8px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px; 
+    width: auto;  
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 13px 19px;
+    font-weight: 600;
+    transition: all 300ms ease;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    background-color: #ffffff;
+    color: #800020; 
+    border-radius: 4px;
+}
+
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #800020; 
+}
+
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('school.webp');
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat;
+    height: 350px;               
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+    align-items: center;        
+    color: white;                
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 0 0 20px 20px; 
+}
+
+.hero h1 {
+    color: #ffffff;  
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    color: #f1f1f1;
+    font-size: 22px;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+
+.about-content {
+    text-align: center; 
+    padding: 40px 0;
+}
+
+.mission-text {
+    max-width: 850px;       
+    margin: 40px auto 80px auto; 
+    padding: 30px 40px;     
+    border-left: 5px solid #800020;
+    border-right: 5px solid #800020;
+    background: #fdfdfd;    
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.02); 
+}
+
+.mission-text p {
+    font-family: 'Georgia', serif;
+    font-size: 22px;           
+    font-style: italic;            
+    line-height: 1.8;              
+    color: #444;                   
+    margin: 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 100%;
+}
+
+.video-container video {
+    width: 850px;
+    max-width: 95%; 
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 4px solid #800020;
+    background-color: black;
+}
+
+.mission-video h3 {
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+
+.features-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #800020 0%, #4d0013 100%);
+    text-align: center;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.features-section h2 {
+    color: #ffffff;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    padding: 30px;
+    border-radius: 15px;
+    background: #ffffff;
+    transition: all 300ms ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #800020;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+table th {
+    background-color: #800020;
+    color: white;
+    padding: 12px;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.teachers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.teacher-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 5px solid #800020; 
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.role {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #800020;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.submit-btn {
+    background-color: #800020;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 300ms;
+}
+
+.submit-btn:hover {
+    background-color: #a52a2a;
+}
+
+.map-container {
+    margin-top: 25px;
+    border: 2px solid #800020;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    background: #fff;
+    border: 2px solid #800020; 
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 300ms ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 4px;
+}
+
+
+.news-card {
+    background: #fff;
+    border-left: 5px solid #800020; 
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.news-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #eee;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffcccb; 
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
